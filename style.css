@@ -1,0 +1,46 @@
+html,
+body {
+	height: 100%;
+}
+
+.container {
+	min-height: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100px 1fr 50px;
+	gap: 15px;
+	overflow-y: scroll;
+}
+
+.header {
+	font-size: x-large;
+	font-weight: bolder;
+}
+
+.header,
+.footer {
+	text-align: center;
+	padding: 10px;
+	background-color: skyblue;
+}
+
+.card-container {
+	padding: 15px;
+}
+
+.card {
+	outline: 1px skyblue;
+	font-size: larger;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.card img {
+	width: 80%;
+	aspect-ratio: auto;
+}
+
+.card p {
+	background-color: skyblue;
+	width: clamp(100px, 150px, 200px);
+}
